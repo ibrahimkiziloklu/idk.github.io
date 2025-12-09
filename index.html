@@ -15,12 +15,12 @@
     <meta name="twitter:title" content="Ibrahim Doruk Kızıloklu – Robotics Engineer">
     <meta name="twitter:description" content="Portfolio of Ibrahim Doruk Kızıloklu, featuring robotics projects, publications and a contact form.">
     <meta name="twitter:image" content="images/profile/headshot.jpg">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/ https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js; connect-src 'self' https://api.emailjs.com https://www.google.com/recaptcha/ https://www.gstatic.com/recaptcha/; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.gstatic.com/recaptcha/; frame-src 'self' https://www.google.com/recaptcha/ https://recaptcha.google.com/recaptcha/; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
 
     <link rel="stylesheet" href="css/main-styles.css">
-    <!-- Font Awesome for minimal icon usage -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js" defer crossorigin="anonymous"></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
     <!-- Skip navigation link for accessibility -->
@@ -55,8 +55,8 @@
                     <h1 class="fade-in delay-1">Ibrahim Doruk Kızıloklu</h1>
                     <h2 class="fade-in delay-2">Robotics Engineer</h2>
                     <div class="fade-in delay-3">
-                        <a href="#contact" class="btn"><i class="far fa-envelope" aria-hidden="true"></i> Contact</a>
-                        <a href="#projects" class="btn btn-secondary"><i class="far fa-folder-open" aria-hidden="true"></i> Projects</a>
+                        <a href="#contact" class="btn">Contact</a>
+                        <a href="#projects" class="btn btn-secondary">Projects</a>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@
                 </div>
                 <div class="about-content">
                     <div class="fade-in">
-                        <img src="images/projects/dolphin_project/ist_expo.jpg" alt="Working on robotics" style="width: 100%; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.08);" loading="lazy">
+                        <img src="images/projects/dolphin_project/ist_expo.jpg" alt="Working on robotics" class="about-image" loading="lazy">
                     </div>
                     <div class="about-text fade-in delay-1">
                         <h3>Robotics Engineer</h3>
@@ -91,7 +91,7 @@
                     </div>
                 </div>
                 <div class="cv-download fade-in delay-2">
-                    <a href="images/assets/Idk_Cv.pdf" class="btn" target="_blank"><i class="far fa-file-pdf" aria-hidden="true"></i> Download CV</a>
+                    <a href="images/assets/Idk_Cv.pdf" class="btn" target="_blank" rel="noopener noreferrer">Download CV</a>
                 </div>
             </div>
         </section>
@@ -165,7 +165,7 @@
         <!-- Publications Section -->
         <section id="publications">
             <!-- Playful decorative elements -->
-            <div class="fun-bubble bubble-sm" style="left: auto; right: 100px; top: 50px;"></div>
+            <div class="fun-bubble bubble-sm bubble-offset"></div>
             
             <div class="container">
                 <div class="section-title">
@@ -177,13 +177,13 @@
                         <h3>Design and Stiffness Modeling of a Novel Planar Parallel Robot with Variable Stiffness Actuators</h3>
                         <div class="publication-meta">Springer/Mechanism Design for Robotics (2024)</div>
                         <p>Co-authored research detailing the design of variable stiffness actuators for planar robots, focusing on innovative mechanism design and stiffness modeling approaches.</p>
-                        <a href="https://link.springer.com/chapter/10.1007/978-3-031-67383-2_30" class="publication-link" target="_blank">Read Publication</a>
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-031-67383-2_30" class="publication-link" target="_blank" rel="noopener noreferrer">Read Publication</a>
                     </div>
                     <div class="publication-item fade-in delay-1">
                         <h3>A Comparative Analysis Between the Additive and the Multiplicative Extended Kalman Filter</h3>
                         <div class="publication-meta">arXiv:2307.06300</div>
                         <p>This project focuses on a practical comparison between the MEKF and the Additive Extended Kalman Filter in satellite attitude estimation.</p>
-                        <a href="https://arxiv.org/abs/2307.06300" class="publication-link" target="_blank">Read Publication</a>
+                        <a href="https://arxiv.org/abs/2307.06300" class="publication-link" target="_blank" rel="noopener noreferrer">Read Publication</a>
                     </div>
                 </div>
             </div>
@@ -192,7 +192,7 @@
         <!-- Contact Section -->
         <section id="contact">
             <!-- Playful decorative elements -->
-            <div class="fun-dots dots-top-right" style="top: auto; bottom: 40px;"></div>
+            <div class="fun-dots dots-top-right dots-lower"></div>
             
             <div class="container">
                 <div class="section-title">
@@ -202,24 +202,24 @@
                 <div class="contact-container">
                     <div class="contact-info">
                         <div class="contact-item fade-in">
-                            <div class="contact-icon"><i class="far fa-envelope" aria-hidden="true"></i></div>
+                            <div class="contact-icon" aria-hidden="true">✉</div>
                             <div>
                                 <h3>Email</h3>
                                 <p>ibrahimkiziloklu@gmail.com</p>
                             </div>
                         </div>
                         <div class="contact-item fade-in delay-1">
-                            <div class="contact-icon"><i class="far fa-map" aria-hidden="true"></i></div>
+                            <div class="contact-icon" aria-hidden="true">📍</div>
                             <div>
                                 <h3>Location</h3>
                                 <p>Aalborg, Denmark</p>
                             </div>
                         </div>
                         <div class="contact-item fade-in delay-2">
-                            <div class="contact-icon"><i class="fab fa-linkedin-in" aria-hidden="true"></i></div>
+                            <div class="contact-icon" aria-hidden="true">in</div>
                             <div>
                                 <h3>LinkedIn</h3>
-                                <p><a href="https://www.linkedin.com/in/ibrahimdorukkiziloklu/" target="_blank" style="color: var(--secondary); text-decoration: none;">ibrahimdorukkiziloklu</a></p>
+                                <p><a href="https://www.linkedin.com/in/ibrahimdorukkiziloklu/" target="_blank" rel="noopener noreferrer" class="contact-link">ibrahimdorukkiziloklu</a></p>
                             </div>
                         </div>
                     </div>
@@ -252,10 +252,10 @@
                                 <span class="error-text" id="recaptchaError"></span>
                             </div>
                             
-                            <button type="submit" class="btn" style="border: none; cursor: pointer;" id="submitBtn">Send Message</button>
+                            <button type="submit" class="btn" id="submitBtn">Send Message</button>
                             
                             <!-- Status message container with aria-live for accessibility -->
-                            <div id="formStatus" class="form-status" role="alert" aria-live="polite" style="display: none; margin-top: 20px; padding: 15px; border-radius: 8px; text-align: center;"></div>
+                            <div id="formStatus" class="form-status" role="alert" aria-live="polite"></div>
                         </form>
                     </div>
             </div>
@@ -269,205 +269,11 @@
         
         <div class="container">
             <ul class="social-links">
-                <li><a href="https://www.linkedin.com/in/ibrahimdorukkiziloklu/" target="_blank" aria-label="LinkedIn profile"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
-                <li><a href="https://github.com/ibrahimkiziloklu" target="_blank" aria-label="GitHub profile"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/ibrahimdorukkiziloklu/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile"><span aria-hidden="true" class="social-text">in</span></a></li>
+                <li><a href="https://github.com/ibrahimkiziloklu" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile"><span aria-hidden="true" class="social-text">GH</span></a></li>
             </ul>
             <p>&copy; 2025 Ibrahim Doruk Kızıloklu. All Rights Reserved.</p>
         </div>
     </footer>
-
-    <!-- Simple Animation Script using IntersectionObserver -->
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const fadeElements = document.querySelectorAll('.fade-in');
-        // Use IntersectionObserver for better performance
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.1 });
-        fadeElements.forEach(el => {
-            observer.observe(el);
-        });
-    });
-    </script>
-    <!-- Contact Form Script -->
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Initialize EmailJS with your User ID
-        emailjs.init({
-            publicKey: "IHHA65evH707vhaFQ" // Replace with your actual public key
-        });
-        // Get form elements
-        const form = document.getElementById('contactForm');
-        const formStatus = document.getElementById('formStatus');
-        const submitBtn = document.getElementById('submitBtn');
-        
-        // Get input fields and error elements
-        const nameInput = document.getElementById('name');
-        const emailInput = document.getElementById('email');
-        const subjectInput = document.getElementById('subject');
-        const messageInput = document.getElementById('message');
-        
-        const nameError = document.getElementById('nameError');
-        const emailError = document.getElementById('emailError');
-        const subjectError = document.getElementById('subjectError');
-        const messageError = document.getElementById('messageError');
-        const recaptchaError = document.getElementById('recaptchaError');
-        
-        // Only proceed if form exists (prevents errors on other pages)
-        if (!form) return;
-        
-        // Add input event listeners for real-time validation
-        nameInput.addEventListener('input', () => validateField(nameInput, nameError, 'Please enter your name', 2));
-        emailInput.addEventListener('input', () => validateEmail(emailInput, emailError));
-        subjectInput.addEventListener('input', () => validateField(subjectInput, subjectError, 'Please enter a subject', 2));
-        messageInput.addEventListener('input', () => validateField(messageInput, messageError, 'Please enter your message', 10));
-        
-        // Form submission
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Reset all error messages
-            clearErrors();
-            
-            // Validate all fields
-            const isNameValid = validateField(nameInput, nameError, 'Please enter your name', 2);
-            const isEmailValid = validateEmail(emailInput, emailError);
-            const isSubjectValid = validateField(subjectInput, subjectError, 'Please enter a subject', 2);
-            const isMessageValid = validateField(messageInput, messageError, 'Please enter your message', 10);
-            
-            // Validate reCAPTCHA
-            const recaptchaResponse = grecaptcha.getResponse();
-            const isRecaptchaValid = !!recaptchaResponse;
-            
-            if (!isRecaptchaValid) {
-                recaptchaError.textContent = 'Please complete the reCAPTCHA verification';
-            }
-            
-            // If any validation fails, stop submission
-            if (!isNameValid || !isEmailValid || !isSubjectValid || !isMessageValid || !isRecaptchaValid) {
-                return;
-            }
-            
-            // Show loading state
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = '<span class="spinner"></span> Sending...';
-            showStatus('', ''); // Clear any existing status
-            
-            // Prepare template parameters for EmailJS
-            const templateParams = {
-                from_name: nameInput.value,
-                from_email: emailInput.value,
-                subject: subjectInput.value,
-                message: messageInput.value,
-                'g-recaptcha-response': recaptchaResponse
-            };
-            
-            // Send the email using EmailJS
-            emailjs.send('service_ge64scs', 'template_kf5o6we', templateParams,"IHHA65evH707vhaFQ")
-                .then(function(response) {
-                    console.log('SUCCESS!', response.status, response.text);
-                    showStatus('Thank you! Your message has been sent successfully. I will get back to you soon.', 'success');
-                    form.reset();
-                    grecaptcha.reset();
-                }, function(error) {
-                    console.error('FAILED...', error);
-                    showStatus('Sorry, there was a problem sending your message. Please try again later.', 'error');
-                })
-                .finally(() => {
-                    submitBtn.disabled = false;
-                    submitBtn.innerHTML = 'Send Message';
-                });
-        });
-        
-        // Validation functions
-        function validateField(field, errorElement, errorMessage, minLength) {
-            if (!field.value.trim()) {
-                field.classList.add('invalid');
-                errorElement.textContent = errorMessage;
-                return false;
-            } 
-            
-            if (field.value.trim().length < minLength) {
-                field.classList.add('invalid');
-                errorElement.textContent = `Must be at least ${minLength} characters`;
-                return false;
-            }
-            
-            // Check for potential XSS or injection attacks
-            if (containsInjection(field.value)) {
-                field.classList.add('invalid');
-                errorElement.textContent = 'Please remove special characters like <, >, {, }, or script tags';
-                return false;
-            }
-            
-            field.classList.remove('invalid');
-            errorElement.textContent = '';
-            return true;
-        }
-        
-        function validateEmail(field, errorElement) {
-            const value = field.value.trim();
-            if (!value) {
-                field.classList.add('invalid');
-                errorElement.textContent = 'Please enter your email address';
-                return false;
-            }
-            // Email regex pattern (RFC 5322 compliant)
-            const emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-            if (!emailPattern.test(value)) {
-                field.classList.add('invalid');
-                errorElement.textContent = 'Please enter a valid email address';
-                return false;
-            }
-            field.classList.remove('invalid');
-            errorElement.textContent = '';
-            return true;
-        }
-        
-        function containsInjection(value) {
-            // Check for common script injection patterns
-            const scriptPattern = /<script|<\/script|javascript:|onerror=|onload=|onclick=|{|}|alert\(|document\.|window\./i;
-            return scriptPattern.test(value);
-        }
-        
-        function clearErrors() {
-            // Reset all error messages
-            nameError.textContent = '';
-            emailError.textContent = '';
-            subjectError.textContent = '';
-            messageError.textContent = '';
-            recaptchaError.textContent = '';
-            // Remove invalid class from all inputs
-            nameInput.classList.remove('invalid');
-            emailInput.classList.remove('invalid');
-            subjectInput.classList.remove('invalid');
-            messageInput.classList.remove('invalid');
-        }
-        
-        function showStatus(message, type) {
-            formStatus.textContent = message;
-            formStatus.className = 'form-status';
-            if (message) {
-                formStatus.classList.add(type);
-                formStatus.style.display = 'block';
-                // Scroll to the status message
-                formStatus.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                // Hide the message after 6 seconds for success, keep errors until next submission
-                if (type === 'success') {
-                    setTimeout(() => {
-                        formStatus.style.display = 'none';
-                    }, 6000);
-                }
-            } else {
-                formStatus.style.display = 'none';
-            }
-        }
-    });
-    </script>
 </body>
 </html>

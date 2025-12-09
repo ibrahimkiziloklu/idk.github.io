@@ -34,6 +34,14 @@ Hi there! I'm Ibrahim, a Robotics Engineer.
 - 💼 LinkedIn: [ibrahimdorukkiziloklu](https://www.linkedin.com/in/ibrahimdorukkiziloklu/)
 - 🌐 Portfolio: [View My Projects](https://idk.github.io/ibrahimkiziloklu)
 
+### 🔐 Site Security Posture
+
+- Every page enforces a tailored Content Security Policy (CSP). If you add new external assets, update the relevant CSP meta tag to include the new host(s).
+- Third-party scripts are limited to Google reCAPTCHA (for the contact form) and EmailJS (for client-side email delivery). Both are already whitelisted; remove the includes if you disable either feature.
+- Project pages share a single modal/gallery script at `js/project-modal.js`, keeping inline scripts out of the HTML to satisfy CSP.
+- A disclosure policy is published at `.well-known/security.txt` for coordinated vulnerability reporting.
+- The EmailJS public key remains visible on the client. Rotate the key periodically and consider moving email delivery to a server-side workflow if you need stricter credential secrecy.
+
 ---
 
 *I'm always open to interesting collaborations and research opportunities.

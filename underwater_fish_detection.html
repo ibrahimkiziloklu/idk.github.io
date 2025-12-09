@@ -4,31 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Underwater Fish Detection and Tracking System | Ibrahim Doruk Kızıloklu</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com; connect-src 'self'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
     <link rel="stylesheet" href="css/portfolio-styles.css">
-    <style>
-        .video-container {
-            position: relative;
-            overflow: hidden;
-            padding-top: 56.25%; /* 16:9 Aspect Ratio */
-            margin: 30px 0;
-            border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        
-        .video-section {
-            margin-top: 40px;
-            margin-bottom: 40px;
-        }
-    </style>
 </head>
 <body>
     <!-- Header -->
@@ -86,10 +63,10 @@
                         <span class="tech-tag">Python</span>
                     </div>
                     
-                    <div style="margin-top: 30px;">
-                        <h4 style="margin-bottom: 15px;">Project Gallery</h4>
-                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-bottom: 20px;">
-                            <img src="images\projects\caretta_project\object detection.jpg" alt="Fish detection in action" style="width: 100%; border-radius: 8px; box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);">
+                    <div class="section-offset">
+                        <h4 class="subheading">Project Gallery</h4>
+                        <div class="grid-two">
+                            <img src="images/projects/caretta_project/object detection.jpg" alt="Fish detection in action" class="gallery-image">
                         </div>
                     </div>
                 </div>
@@ -98,7 +75,7 @@
                     <h3>Technical Challenges</h3>
                     <p>The development of this underwater vision system presented several unique technical challenges:</p>
                     
-                    <ul style="list-style-type: disc; margin-left: 20px; margin-bottom: 20px;">
+                    <ul class="list-highlight">
                         <li>Compensating for underwater light scattering and absorption that affects image quality</li>
                         <li>Developing robust algorithms that could handle varying visibility conditions</li>
                         <li>Creating efficient models that could run on power-constrained underwater platforms</li>
@@ -113,7 +90,7 @@
                     <h3>Applications</h3>
                     <p>This fish detection and tracking system has been implemented in several applications:</p>
                     
-                    <ul style="list-style-type: disc; margin-left: 20px; margin-bottom: 20px;">
+                    <ul class="list-highlight">
                         <li>Marine life monitoring for environmental research</li>
                         <li>Autonomous underwater surveillance systems</li>
                         <li>Fishery management and stock assessment</li>

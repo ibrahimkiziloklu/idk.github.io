@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Underwater Biomimetic Robot | Ibrahim Doruk Kızıloklu</title>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; frame-src 'self' https://www.youtube.com https://www.youtube-nocookie.com; connect-src 'self'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests;">
     <link rel="stylesheet" href="css/portfolio-styles.css">
 </head>
 <body>
@@ -34,7 +35,7 @@
     <section>
         <div class="container">
             <div class="project-content">
-                <img src="images\projects\dolphin_project\dolp_1.jpeg" alt="Underwater Biomimetic Robot" class="project-image">
+                <img src="images/projects/dolphin_project/dolp_1.jpeg" alt="Underwater Biomimetic Robot" class="project-image">
                 
                 <div class="project-detail">
                     <h3>Project Overview</h3>
@@ -51,8 +52,8 @@
                     <p>The development process involved several stages of prototyping and testing:</p>
                     
                     <div class="gallery">
-                        <img src="images\projects\dolphin_project\tail_prototype.jpg" alt="Tail mechanism prototype" class="gallery-img">
-                        <img src="images\projects\dolphin_project\ist_expo.jpg" alt="Exhibition showcase" class="gallery-img">
+                        <img src="images/projects/dolphin_project/tail_prototype.jpg" alt="Tail mechanism prototype" class="gallery-img">
+                        <img src="images/projects/dolphin_project/ist_expo.jpg" alt="Exhibition showcase" class="gallery-img">
 
                     </div>
                     
@@ -78,7 +79,7 @@
                         <span class="tech-tag">Fluid Dynamics</span>
                     </div>
                     
-                    <div style="margin-top: 30px;">
+                    <div class="section-offset">
                         <a href="index.html#projects" class="btn">Back to Projects</a>
                     </div>
                 </div>
@@ -100,34 +101,6 @@
         </div>
     </footer>
 
-    <script>
-        // Get the modal
-        var modal = document.getElementById("imageModal");
-        var modalImg = document.getElementById("modalImg");
-        var closeBtn = document.getElementsByClassName("close")[0];
-        
-        // Get all images with class "gallery-img"
-        var images = document.getElementsByClassName("gallery-img");
-        
-        // Add click event to all gallery images
-        for (var i = 0; i < images.length; i++) {
-            images[i].onclick = function() {
-                modal.style.display = "block";
-                modalImg.src = this.src;
-            }
-        }
-        
-        // Close the modal when clicking the × button
-        closeBtn.onclick = function() {
-            modal.style.display = "none";
-        }
-        
-        // Close the modal when clicking outside the image
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
+    <script src="js/project-modal.js" defer></script>
 </body>
 </html>

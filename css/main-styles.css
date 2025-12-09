@@ -55,6 +55,11 @@ html {
     right: 10%;
 }
 
+.dots-lower {
+    top: auto;
+    bottom: 40px;
+}
+
 .dots-bottom-left {
     bottom: 40px;
     left: 10%;
@@ -81,6 +86,13 @@ html {
     height: 100px;
     bottom: 50px;
     left: 100px;
+}
+
+.bubble-offset {
+    left: auto;
+    right: 100px;
+    top: 50px;
+    bottom: auto;
 }
 
 /* Fun Lines */
@@ -230,16 +242,12 @@ nav {
     overflow: hidden;
     z-index: 1;
     box-shadow: 0 4px 10px rgba(255, 107, 107, 0.2);
+    cursor: pointer;
 }
 
 .btn:hover {
     background-color: var(--dark);
     transform: translateY(-3px);
-}
-
-.btn i {
-    margin-right: 6px;
-    font-size: 0.9em;
 }
 
 .btn-secondary {
@@ -308,6 +316,12 @@ section:nth-child(even) {
 .about-text p {
     margin-bottom: 20px;
     font-size: 1.05rem;
+}
+
+.about-image {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .expertise-list {
@@ -548,6 +562,18 @@ section:nth-child(even) {
     background-color: var(--light);
     color: var(--primary);
     font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.contact-link {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    text-decoration: underline;
 }
 
 .contact-form {
@@ -633,6 +659,11 @@ footer {
     color: var(--primary);
 }
 
+.social-text {
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
 /* Simple Animations */
 @keyframes fadeInUp {
     from {
@@ -659,6 +690,14 @@ footer {
     font-size: 0.8rem;
     margin-top: 5px;
     display: block;
+}
+
+.form-status {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
 }
 
 .form-status.success {

@@ -1,0 +1,4 @@
+Contact: mailto:ibrahimkiziloklu@gmail.com
+Policy: https://ibrahimkiziloklu.github.io/#contact
+Preferred-Languages: en
+Canonical: https://ibrahimkiziloklu.github.io/.well-known/security.txt
